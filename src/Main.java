@@ -22,6 +22,6 @@ public class Main {
             //System.out.println(i + " " + arr[i]);
             totalOfAllPayments = totalOfAllPayments + arr[i];
         }
-        System.out.println("Сумма трат за месяц составила " + totalOfAllPayments + " рублей.");
+        System.out.println("Сумма трат за месяц составила " + totalOfAllPayments + " рублей. ");
     }
 }
