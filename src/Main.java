@@ -23,5 +23,22 @@ public class Main {
             totalOfAllPayments = totalOfAllPayments + arr[i];
         }
         System.out.println("Сумма трат за месяц составила " + totalOfAllPayments + " рублей. ");
+        //task2
+        int maxWaste = 1_00_000;
+        int minWaste = 2_00_000;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < minWaste) {
+                //System.out.println(i);
+                minWaste = arr[i];
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составила " +minWaste + " рублей");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxWaste) {
+                //System.out.println(i);
+                maxWaste = arr[i];
+            }
+        }
+        System.out.println("Максимальная сумма трат за день составила " +maxWaste+ " рублей");
     }
 }
